@@ -207,10 +207,6 @@ INSERT INTO material_cost (project_no, material_code, quantity, price) VALUES
 ('zy2018005', 'wm004', 300, 10.00);
 GO
 
--- ==========================================
--- 第四部分：可选视图和存储过程（仅用于查询，不影响修改）
--- 如果前端不使用这些对象，可跳过；若需保留，可执行以下代码
--- ==========================================
 
 -- 视图：项目材料概览（无害）
 CREATE VIEW dbo.v_project_material AS
