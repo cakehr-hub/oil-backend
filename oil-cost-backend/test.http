@@ -1,0 +1,66 @@
+### 查询全部
+GET http://localhost:8080/api/projects
+
+
+### 按编号查询
+GET http://localhost:8080/api/projects/zy2018001
+
+
+### 新增作业项目
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "projectNo": "zy2018009",
+  "budgetUnit": "112201001",
+  "wellNo": "y001",
+  "budgetAmount": 10000,
+  "budgetPerson": "张三",
+  "budgetDate": "2018-07-01",
+  "startDate": "2018-07-04",
+  "finishDate": "2018-07-25",
+  "contractorName": "作业公司作业一队",
+  "workContent": "堵漏",
+  "materialFee": 7000,
+  "laborFee": 2500,
+  "equipmentFee": 1000,
+  "otherFee": 1400,
+  "settlementAmount": 11900,
+  "settlementPerson": "李四",
+  "settlementDate": "2018-07-26",
+  "accountAmount": 11900,
+  "accountPerson": "王五",
+  "accountDate": "2018-07-28"
+}
+
+
+### 修改作业项目
+PUT http://localhost:8080/api/projects/zy2018009
+Content-Type: application/json
+
+{
+  "projectNo": "zy2018009",
+  "budgetUnit": "112201001",
+  "wellNo": "y001",
+  "budgetAmount": 12000,
+  "budgetPerson": "张三",
+  "budgetDate": "2018-07-01",
+  "startDate": "2018-07-04",
+  "finishDate": "2018-07-25",
+  "contractorName": "作业公司作业一队",
+  "workContent": "堵漏修改",
+  "materialFee": 7000,
+  "laborFee": 2500,
+  "equipmentFee": 1000,
+  "otherFee": 1400,
+  "settlementAmount": 11900,
+  "settlementPerson": "李四",
+  "settlementDate": "2018-07-26",
+  "accountAmount": 11900,
+  "accountPerson": "王五",
+  "accountDate": "2018-07-28"
+}
+
+
+### 删除作业项目
+DELETE http://localhost:8080/api/projects/zy2018009
